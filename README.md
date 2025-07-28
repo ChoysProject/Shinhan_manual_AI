@@ -2,10 +2,36 @@
 
 
 <img width="579" height="845" alt="image" src="https://github.com/user-attachments/assets/8383dc4b-3b12-4946-b8b0-57c917911b27" />
+<img width="859" height="564" alt="image" src="https://github.com/user-attachments/assets/f200b791-abb4-4b54-8a31-4ce76ca9049f" />
+<img width="1155" height="730" alt="image" src="https://github.com/user-attachments/assets/a2cc2b80-d28c-4552-ad46-19264349c0f2" />
+<img width="940" height="583" alt="image" src="https://github.com/user-attachments/assets/3a127f32-0fdf-42b1-88e4-0b4c409c2475" />
 
 
 // frontend
-  1. next.js and typescript
+  1. 언어 및 프레임워크 : next.js and typescript
+  2. 설치 가이드 :
+                      # 1. 프로젝트 폴더로 이동
+                      cd frontend
+                      
+                      # 2. next.js + TypeScript 프로젝트 생성
+                      npx create-next-app@latest . --typescript --eslint --src-dir --app --import-alias "@/*" --use-npm
+                      
+                      # 3. UI 라이브러리 설치 (Material UI 예시)
+                      npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+                      
+                      # 4. 기타 필요한 라이브러리(예: axios 등)
+                      npm install axios
+                      
 
 // backend
   1. python and fastAPI
+  2. 설치 가이드 : 
+                   /backend 경로 이동
+                   경로에서 파이썬 설치 pip install fastapi uvicorn openai faiss-cpu "pdfplumber<0.11.0" python-pptx python-docx python-multipart
+  3. 백엔드 구조 backend/
+                    ├─ main.py              # FastAPI 진입점
+                    ├─ requirements.txt     # 의존성 목록
+                    ├─ vector_store.py      # FAISS 벡터DB 관리
+                    ├─ file_utils.py        # 파일/텍스트 추출 유틸
+                    └─ (data/, uploads/)    # 업로드/임베딩 데이터
+
