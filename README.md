@@ -35,3 +35,27 @@
                     ├─ file_utils.py        # 파일/텍스트 추출 유틸
                     └─ (data/, uploads/)    # 업로드/임베딩 데이터
 
+
+  4. 백엔드 준비 (실행 코드 uvicorn main:app --reload)
+        1) 필요한 패키지 설치
+                  아래 패키지들이 필요합니다:
+                  fastapi
+                  uvicorn
+                  openai
+                  faiss-cpu
+                  numpy
+                  pdfplumber
+                      => 명령어 pip install --upgrade pip (pip 구버전이라서)
+                                pip install fastapi uvicorn openai faiss-cpu numpy pdfplumber
+
+           pip install python-pptx python-docx -> 파이썬에서 각 문서들 읽기 패키지
+
+
+           DB : Pinecone -> pcsk_BaUYA_Hb3cpxNJFhw6Z9WCUVPs9Ukzckf948ttTsAGBfzeNXPLvtrpWsS7k3qqUhrJoTt
+           backend에서 설치 : pip install pinecone-client
+           GPT : 비밀
+
+
+            FLOW
+            파일 업로드 시 텍스트 추출 → 임베딩 생성 → Pinecone(벡터DB)에 저장
+            질문 시 임베딩 생성 → Pinecone에서 유사 문서 검색 → GPT에 문서+질문 전달 → 답변 생성
