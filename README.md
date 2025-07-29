@@ -54,6 +54,7 @@
            DB : Pinecone -> pcsk_BaUYA_Hb3cpxNJFhw6Z9WCUVPs9Ukzckf948ttTsAGBfzeNXPLvtrpWsS7k3qqUhrJoTt
            backend에서 설치 : pip install pinecone-client
            GPT : 비밀
+  밀
 
 
             FLOW
