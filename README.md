@@ -56,7 +56,7 @@
            GPT : 비밀
            Pinecone : 비밀
            replica : key 및 임베딩 모델
-
+     중
 
             FLOW
             파일 업로드 시 텍스트 추출 → 임베딩 생성 → Pinecone(벡터DB)에 저장
