@@ -45,30 +45,5 @@
                   faiss-cpu
                   numpy
                   pdfplumber
-                      => 명령어 pip install --upgrade pip (pip 구버전이라서)
-                                pip install fastapi uvicorn openai faiss-cpu numpy pdfplumber
-
-           pip install python-pptx python-docx -> 파이썬에서 각 문서들 읽기 패키지
-
-
-           DB : Pinecone -> pcsk_BaUYA_Hb3cpxNJFhw6Z9WCUVPs9Ukzckf948ttTsAGBfzeNXPLvtrpWsS7k3qqUhrJoTt
-           backend에서 설치 : pip install pinecone-client
-           GPT : 비밀
-           Pinecone : 비밀
-           replica : key 및 임베딩 모델
-           벡터DB : 모드 GPT 
-
-            FLOW
-            파일 업로드 시 텍스트 추출 → 임베딩 생성 → Pinecone(벡터DB)에 저장
-            질문 시 임베딩 생성 → Pinecone에서 유사 문서 검색 → GPT에 문서+질문 전달 → 답변 생성
-
-5. 단체 대화방
-   매뉴얼 AI방 (60%) -> 유사도 조절필요
-   위키 링크방 
-   점메추방
-   엑셀 AI 
-   일반 GPT (100%) 
-
-
-6. 20250806 - 용수석님 내용 매뉴얼 내꺼로 합치기, 로그인 로직 개발, 브런치 따기
+                      => 명령어 pip install중
    
